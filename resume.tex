@@ -1,0 +1,99 @@
+\documentclass{kaeserchen_cv}
+
+% Reduce margin
+\geometry{
+    a4paper, 
+    margin=20mm,
+}
+
+\begin{document}
+\thispagestyle{empty}
+\name{Christine}{Kaeser-Chen}
+\subtitle{Software Engineer}{Engineering Manager}
+\contact{christine.kaeserchen@gmail.com}{(847)-859-9148}{@kaeserchen}
+
+
+\section{Motivation}
+I am a software engineer and researcher in computer vision. Currently I lead a small team at Google building new input and interaction technology for virtual and augmented reality. My main motivation is building things to capture and recreate moments that matter in life.
+
+\section{Experience}
+\experienceentry{Google}
+                {Senior Software Engineer, Tech Lead / Manager}
+	        {2013-present}
+	        {Mountain View, CA}
+	        {I lead a small engineering team in Daydream (Google VR) exploring 
+		 new ways for input and interaction in VR. We work at the 
+		 intersection of computer vision, machine learning (neural networks
+         	 in particular), and HCI, in order to build new input methods to 
+		 make VR feel even more immersive. \\
+		 \newline
+		 Prior to that, I was: \\
+	         \textbullet ~ Founding team member of Google Cardboard. \\
+                 \textbullet ~ Software engineer in Android working on new Camera features and other core apps. \\
+		 }
+\newline
+\experienceentry{Flutter, Bot Square Inc.}
+                {Engineering Intern}
+	        {2012-2013}
+	        {San Franisco, CA}
+	        {Flutter was an app where users can use hand gestures to control media playback on computers: \\
+                 \textbullet ~ Investigating new computer vision features, and 
+		               improving machine learning algorithms for gesture detection \\
+                 \textbullet ~ Develping new User interactions. \\}
+\newline
+\experienceentry{Disney Research Z\"urich}
+                {Research Intern}
+	        {2010}
+	        {Z\"urich, Swizerland}
+	        {I worked in the video processing team at Disney Research Zurich.: \\
+                 \textbullet ~ Developed an interactive control platform using 
+		               multi-touch screens for a computational stereoscopic camera system. \\
+                 \textbullet ~ Co-authored the stereoscopic control algorithms for the 
+		               computational camera system.}
+
+\section{Education}
+\educationentry{ETH Z\"urich}
+               {Master of Science in Computer Science}
+	       {2009-2012}
+	       {Z\"urich, Swizerland}
+	       {Focus Areas: Visual Computing, Theoretical Computer Science \\
+		Thesis Topic: \textit{Computational Sports Broadcasting: Automated Director 
+	                              Assistance for Live Sports} \\}
+\newline
+\educationentry{The Hong Kong University of Science and Technology}
+               {Bachelor of Science}
+               {2005-2009}
+               {Hong Kong}
+               {Majors: Mathematics, Computer Science}
+
+\section{Publications}
+\begingroup
+\renewcommand{\section}[2]{}
+\makeatletter
+\renewcommand\@biblabel[1]{\textbullet}
+\makeatother
+\setlength{\bibsep}{2pt}
+%\setstretch{1}
+\bibliography{publications}
+\bibliographystyle{ieeetr}
+\nocite{*}
+\endgroup
+\vspace{-0\baselineskip}
+
+\section{Awards and Honors}
+\begin{awardssection}
+    \award{2015}{Cannes Lions Mobile Grand Prix}{Google Cardboard}
+    \award{2009-2012}{Excellence Scholarship \& Opportunity Programme Award}{ETH Z\"urich}
+    \award{2009}{Academic Achievement Award, First Class Honor}{HKUST}
+\end{awardssection}
+
+
+\section{Skills}
+\begin{skillssection}
+    \skill{Programming}{C++, Python, Java}
+    \skill{Experiences with}{TensorFlow, Google VR SDK, Android}
+    \skill{Languages}{English, Chinese, German}
+\end{skillssection}
+
+\end{document}
+
