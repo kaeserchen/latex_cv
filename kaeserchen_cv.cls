@@ -10,12 +10,13 @@
 \RequirePackage[scaled=0.9]{helvet}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[usenames, dvipsnames]{color}
-\RequirePackage{array,ragged2e}
+\RequirePackage{array}
+\RequirePackage{ragged2e}
 \RequirePackage{tabularx}
 \RequirePackage{cite}
 \RequirePackage[super,sort&compress]{natbib}
 
-\definecolor{highlight}{RGB}{149, 165, 166}
+\definecolor{highlight}{RGB}{41, 124, 253}
 \setlength\parindent{0pt}
 
 % Fill a line to the right.
@@ -41,6 +42,15 @@
 
 % Subtitle, takes job titles.
 \newcommand{\subtitle}[2]{
+    \vspace{3mm}
+    \centerline{
+        \bfseries{#1} 
+        {\textperiodcentered} 
+        \bfseries{#2}}
+}
+
+% Contact section, takes email address, phone number.
+\newcommand{\contact}[3]{
     \vspace{1mm}
     \centerline{
         {#1} 
@@ -48,28 +58,22 @@
         {#2}}
 }
 
-% Contact section, takes email address, phone number.
-\newcommand{\contact}[3]{
-    \vspace{1mm}
-    \centerline{
-        \textcolor{highlight}{#1} 
-        {\color{highlight}\textperiodcentered} 
-        \textcolor{highlight}{#2}}
-}
-
 \newcommand{\boldscshape}[1]{
     {\scshape\textbf{#1}}
 }
 
+\newcommand{\leftjustified}[1]{
+    {\raggedright{#1}}
+}
+
 % Experiences Format.
-\newcommand{\experienceentry}[5]{
-    \boldscshape{#1} | {#2} \hfill \textcolor{highlight}{#3} | \textcolor{highlight}{#4} \\
-    {#5}
+\newcommand{\experienceentry}[4]{
+    \boldscshape{#1} | {#2} \hfill \textit{#3} | \textit{#4}
 }
 
 % Education Format.
 \newcommand{\educationentry}[5]{
-    \boldscshape{#1} | {#2} \hfill \textcolor{highlight}{#3} | \textcolor{highlight}{#4} \\
+    \boldscshape{#1} | {#2} \hfill \textit{#3} | \textit{#4} \\
     {#5}
 }
 
@@ -78,7 +82,7 @@
 
 % Define an environment for awards 
 \newenvironment{awardssection}{
-    \begin{tabular*}{0.98\textwidth}{rl@{\extracolsep{\fill}}r}
+    \begin{tabular*}{1.01\textwidth}{rl@{\extracolsep{\fill}}r}
 }{
     \end{tabular*}
 }
