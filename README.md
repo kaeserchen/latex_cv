@@ -1,3 +1,3 @@
-# Latex style and content for customized CV format.
+# Latex style for customized CV.
 
 Works with XeLaTex from the MacTex distribution.
